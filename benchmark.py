@@ -10,7 +10,7 @@ def benchmark(func: Callable, iters: int):
     num_primes = 0
     for i in range(2, iters):
         num_primes += func(i)
-    print(f"{num_primes} primes found from {limit} iterations in {round(time.time() - start, 4)} seconds.")
+    print(f"{num_primes} primes found from {limit} iters in {round(time.time() - start, 4)} seconds.")
 
 
 if __name__ == "__main__":
